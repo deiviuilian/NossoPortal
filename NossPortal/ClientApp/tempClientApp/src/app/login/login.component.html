@@ -1,0 +1,30 @@
+<div class="maindiv">
+  <div class="">
+      <video autoplay loop muted id="video-background">
+        <source src="../../../../assets/video/bkgdportal.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+      </video>
+      <div class="flex-container-login">
+        <div class="login-container">
+          <form class="login-form" (ngSubmit)="onSubmit()">
+            <img src="../../../../assets/img/LogoNP.png" alt="" class="imglogo">
+            <br>
+            <mat-form-field>
+              <mat-label>Login</mat-label>
+              <input matInput name="username">
+              <mat-icon matSuffix>account_box</mat-icon>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Senha</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'">
+              <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+            <button class="btnlogin" mat-raised-button color="primary" type="submit">Login</button>
+            <br />
+            <a class="btn btn-lg btn-link btn-block" routerLink="/user/registrar">Quero me cadastrar</a>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+
